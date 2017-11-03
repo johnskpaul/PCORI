@@ -26,7 +26,7 @@ public class LoginI2b2Pcori {
 
 	  @BeforeClass(alwaysRun = true)
 	  public void setUp() throws Exception {
-		  System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\Apache\\geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 	    driver = new FirefoxDriver();
 //	    baseUrl = "https://dbmi-ncats-dev01.dbmi.pitt.edu/";
 	    baseUrl = "http://dbmi-i2b2-dev02.dbmi.pitt.edu/";
