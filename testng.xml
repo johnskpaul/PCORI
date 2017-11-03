@@ -21,11 +21,11 @@
 			</run>
 		</groups>
     <classes>
-      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCare"/>
+     <!--  <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCare"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilOralTab"/>
-      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioAceInhibit"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioAceInhibit"/> -->
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicY"/>
-      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectroSodiumBloodArt"/>
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectroSodiumBloodArt"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioMeds"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperDigestiveSystem"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioMedsDateRange"/>
@@ -34,7 +34,7 @@
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilDateRange"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespDateRange"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhite"/>
-      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteAgeHispanic"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteAgeHispanic"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilOralTabDateRange"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteDate"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytes"/>
@@ -52,7 +52,7 @@
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptopril"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantANDAsthma"/>
       <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaAge5564"/>
-      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesMedCaptopril"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesMedCaptopril"/> -->
     </classes>
   </test> <!-- TestDBDuration -->
 </suite> <!-- Suite -->
