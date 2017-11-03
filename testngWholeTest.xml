@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test" parallel="false">
+    <classes>
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagCertPerinatHemorNewBrnIntraCraniGrd1NBornDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilOralTab"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioAceInhibit"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcObstetrPregExtracProductViaArtNatuNoDevice"/>
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioMedsDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_VisitTypeEmergency"/>
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperDigestiveSystemDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantDate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMeasurePhysioloMonitorProducts"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisEarOttisAcuteOttisREar"/>
+     <!--  <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagCertInfecRickettSpotFeverAustralisDate"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceBlkOrAfAm"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteAgeHispanic"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagSymptomsR00_99R1019AbdomPelvicOtherReboundLeftUpTender"/>
+     <!--  <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisEarOttisAcuteOttisREarDateRange"/> -->
+    <!--   <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMedSurUpprtJntReplaceSternoOpenSynthetic"/>
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ImgUpperArtMRI_VertArtBilateral"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcAdminPhysioIrriEyePercutIrrigSubstance"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesAgeArtiFibril"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisResp"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMedSurUpprtJntReplaceSternoOpen"/>
+     <!--  <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectroSodiumBloodArtDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptopril"/>
+     <!--  <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagSymptomsR00_99R1019AbdomPelvicOtherReboundLeftUpTenderDateRange"/> -->
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceBlkOrAfAmDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_OtherProcPhysioOtherProcUpperExternalRobotic"/>
+     <!--  <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisMuskSkelDeformScoliosisLumbarDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcExtracorporealPerform"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedCentralNerv"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaAge5564"/>
+     <!--  <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelCervicalSpineDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelCervicalSpine"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcImgUpperArtMRI"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagCertInfecRickettSpotFeverAustralis"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesMedCaptopril"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisMuskSkelDeformScoliosisLumbar"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCare"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcExtraPhysioloExtracorHyperthermia"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcAdminPhysioIrriEyePercutaneous"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicY"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectroSodiumBloodArt"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioMeds"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelCervicalSpineTechnetium99"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperDigestiveSystem"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMeasurePhysioloMonitorProductsExtRate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemVitalDeadDateRange"/>
+    <!--   <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagCertPerinatHemorNewBrnIntraCraniGrd1NBorn"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisNervMyoneuralMyopathInflamatoryOtherInflmatoryElseClassifiedDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhite"/>
+     <!--  <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilOralTabDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteDate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytes"/>
+     <!--  <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioAceInhibitDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicDate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelSkulNCervical"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthma"/>
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHmSelfCareAge3445DateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCareAge3444"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemVitalDead"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlant"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_VisitTypeAmbulatory"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMentalNonePsychoPersonBehavioral"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisNervMyoneuralMyopathInflamatoryOtherInflmatoryElseClassified"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcPlacemntAnatomiRemovalFootExtrCast"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantANDAsthma"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_PhyRehabActivitCirculatoryLowerExtrCirculation"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcRadiEarNoseStereoSalivRadioSurgery"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_PhyRehabActivitCirculatoryLowerExtrAerobicConditioning"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcPhysicalRehabAudiology"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

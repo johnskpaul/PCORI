@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>TestNG:  TestICD109</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestICD109</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 14 10:23:18 EDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>650 seconds (650572 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisResp.qryICD109DiagDisResp()'><b>qryICD109DiagDisResp</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisResp<br/>
+<a href="#Output-295485334" onClick='toggleBox("Output-295485334", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-295485334" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-295485334">
+UI Query Resulst:Query Name: Diseases of the@10:30:48
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+Diagnoses \ Diseases of the respiratory system (j00-j99) Diseases of the respiratory system (j00-j99)  
+Finished Query: "Diseases of the@10:30:48"
+[20.9 secs]
+Compute Time: 19 secs
+Number of patients for "Diseases of the@10:30:48"
+patient_count: 1148775<br/>
+</div>
+</td>
+<td></td>
+<td>206</td>
+<td>com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisResp@4f7d0008</td></tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisRespAsthma.qryICD109DiagDisRespAsthma()'><b>qryICD109DiagDisRespAsthma</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisRespAsthma<br/>
+<a href="#Output-1394940518" onClick='toggleBox("Output-1394940518", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1394940518" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1394940518">
+UI Query Resulst:Query Name: Asthma@10:27:13
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+Diagnoses \ Diseases of the respiratory system (j00-j99) \ Chronic lower respiratory diseases (j40-j47) \ Asthma Asthma  
+Finished Query: "Asthma@10:27:13"
+[6.0 secs]
+Compute Time: 4 secs
+Number of patients for "Asthma@10:27:13"
+patient_count: 246681<br/>
+</div>
+</td>
+<td></td>
+<td>207</td>
+<td>com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisRespAsthma@553f17c</td></tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisRespAsthmaDateRange.qryICD109DiagDisRespAsthmaDateRange()'><b>qryICD109DiagDisRespAsthmaDateRange</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisRespAsthmaDateRange<br/>
+<a href="#Output-1366342900" onClick='toggleBox("Output-1366342900", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1366342900" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1366342900">
+UI Query Resulst:Query Name: Asthma@10:23:36
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  01/01/2015   Date To:  1/1/2017   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+Diagnoses \ Diseases of the respiratory system (j00-j99) \ Chronic lower respiratory diseases (j40-j47) \ Asthma Asthma  
+Finished Query: "Asthma@10:23:36"
+[5.7 secs]
+Compute Time: 5 secs
+Number of patients for "Asthma@10:23:36"
+patient_count: 146422<br/>
+</div>
+</td>
+<td></td>
+<td>209</td>
+<td>com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisRespAsthmaDateRange@5f341870</td></tr>
+</table><p>
+</body>
+</html>

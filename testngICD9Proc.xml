@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" allow-return-values="true">
+	<test name="TestICD9Procedure" preserve-order="true" parallel="false">
+		<groups>
+			<define name="all">
+				<include name="DB_duration"></include>
+				<include name="UI_DB_Comparison"></include>
+			</define>
+			<define name="Duration">
+				<include name="DB_duration"></include>
+			</define>
+			<define name="DBQuery">
+				<include name="DB_query"></include>
+			</define>
+			<define name="UIQuery">
+				<include name="UI_query"></include>
+			</define>
+			<run>
+				<include name="UIQuery"></include>
+			</run>
+		</groups>
+    <classes>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantANDAsthma"/>
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlant"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantDate"/> -->
+    </classes>
+  </test> <!-- TestICD9Procedure -->
+</suite> <!-- Suite -->

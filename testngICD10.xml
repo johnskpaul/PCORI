@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" allow-return-values="true">
+	<test name="TestICD10" preserve-order="true" parallel="false">
+		<groups>
+			<define name="all">
+				<include name="DB_duration"></include>
+				<include name="UI_DB_Comparison"></include>
+			</define>
+			<define name="Duration">
+				<include name="DB_duration"></include>
+			</define>
+			<define name="DBQuery">
+				<include name="DB_query"></include>
+			</define>
+			<define name="UIQuery">
+				<include name="UI_query"></include>
+			</define>
+			<run>
+				<include name="Duration"></include>
+			</run>
+		</groups>
+    <classes>
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthma"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespDateRange"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaAge5564"/>
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisResp"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaDateRange"/> -->
+    </classes>
+  </test> <!-- TestICD10 -->
+</suite> <!-- Suite -->

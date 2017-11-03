@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>TestNG:  TestDemographics</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestDemographics</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 24 11:46:30 EDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>53 seconds (53398 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Duration DB_duration </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaAge5564.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaAge5564<br/>
+<a href="#Output-769132147" onClick='toggleBox("Output-769132147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-769132147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-769132147">
+Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension where concept_path LIKE '\ICD10CM?_2015AA\(J00-J99) Dise~45pn\(J40-J47) Chro~fbox\(J45) Asthma\%' {ESCAPE '?'} ) group by  f.patient_num) select  t.patient_num, 0 as panel_count  from tupdate dev02i2b2demodata.QUERY_GLOBAL_TEMP set panel_count =1 where dev02i2b2demodata.QUERY_GLOBAL_TEMP.panel_count =  0 and exists ( select 1 from ( select p.patient_num from dev02i2b2demodata.patient_dimension p where p.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension where BIRTH_DATE BETWEEN MIN_BIRTHDATE_FOR_AGE(64) AND MAX_BIRTHDATE_FOR_AGE(55)) group by  p.patient_num ) t where dev02i2b2demodata.QUERY_GLOBAL_TEMP.patient_num = t.patient_num )select * from ( select distinct  patient_num  from dev02i2b2demodata.QUERY_GLOBAL_TEMP where panel_count = 1 ) q <br/>
+Query Duration: 42648 ms<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaAge5564@47c62251</td></tr>
+</table><p>
+</body>
+</html>

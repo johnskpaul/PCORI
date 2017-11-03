@@ -1,0 +1,19 @@
+<h2>Reporter output</h2><table><tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(9) Chiropract~k4er\(9W) Chiroprac~xixo\(9WB) Chiropra~r3y4\(9WB1) Chiropr~rc8t\(9WB1X) Chirop~6605\(9WB1XK) Chiro~pzat\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 1128 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures \ Chiropractic (procedure) \ anatomical regions (procedure) \ manipulation \ cervical \ external \ mechanically assisted \*******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: mechanically as@08:55:00
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Chiropractic (procedure) \ anatomical regions (procedure) \ manipulation \ cervical \ external \ mechanically assisted mechanically assisted  
+Finished Query: "mechanically as@08:55:00"
+[4.1 secs]
+Compute Time: 3 secs
+Number of patients for "mechanically as@08:55:00"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(9) Chiropract~k4er\(9W) Chiroprac~xixo\(9WB) Chiropra~r3y4\(9WB1) Chiropr~rc8t\(9WB1X) Chirop~6605\(9WB1XK) Chiro~pzat\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+</table>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="TestAct">
+  <groups>
+			<define name="all">
+				<include name="DB_duration"></include>
+				<include name="UI_DB_Comparison"></include>
+			</define>
+			<define name="Duration">
+				<include name="DB_duration"></include>
+			</define>
+			<define name="DBQuery">
+				<include name="DB_query"></include>
+			</define>
+			<define name="UIQuery">
+				<include name="UI_query"></include>
+			</define>
+			<run>
+				<include name="Duration"></include>
+			</run>
+		</groups>
+    <classes>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabHemHemoA1c"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_OperDigestiveSystemDate"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedCardioMedsDate"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitTypeAmbulatory"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_OperLiverTransPlant"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedFamciclovir"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedCardioAceInhibitDate"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedCardioCaptoprilOralTab"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisResp"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedCardioCaptoprilOralTabDate"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabHemBasoLukocytes100"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedCardioMeds"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectrolytesDateRange"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedCentalAnitdepressSetraline"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerumDateRange"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitTypeEMR"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisInjrInfecMono"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisRespAsthmaDateRange"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_OperDigestiveSystem"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_DemHispanicY"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedCardioCaptoprilDate"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD109DisCirculCerebralInfraEmbolism"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedCardioAceInhibit"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_DemRaceWhiteDate"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_OperLiverTransPlantDate"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum140DateRange"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedFamciclovir_OrderTyp_AmbuPres"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisOfBloodAplasticRedCell"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitDetailsLengthOfStay"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisEar"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_DemKnwnDiseased"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_MedCardioCaptopril"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitTypeAmbulatoryDate"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisChrViralHepC"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisRespAsthma"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ProcNotElseHip"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitDetailsAge"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitDetailsAge45_54"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD9DiagDisInjurDisGenito"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectrolytes"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD109DiagDisRespDateRange"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD9DiagInjuryPoisonFrostByt"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_DemRaceAmOrAlsk"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_DemRaceWhite"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_ICD9DiagDisInjurCongenCleftLip"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum140"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_DemHispanicDate"/>
+    </classes>
+  </test> <!-- TestAct -->
+</suite> <!-- Suite -->

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilOralTab"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioAceInhibit"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcObstetrPregExtracProductViaArtNatuNoDevice"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_VisitTypeEmergency"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantDate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMeasurePhysioloMonitorProducts"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisEarOttisAcuteOttisREar"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceBlkOrAfAm"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteAgeHispanic"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagSymptomsR00_99R1019AbdomPelvicOtherReboundLeftUpTender"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMedSurUpprtJntReplaceSternoOpenSynthetic"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ImgUpperArtMRI_VertArtBilateral"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcAdminPhysioIrriEyePercutIrrigSubstance"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesAgeArtiFibril"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisResp"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMedSurUpprtJntReplaceSternoOpen"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptopril"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_OtherProcPhysioOtherProcUpperExternalRobotic"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcExtracorporealPerform"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedCentralNerv"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaAge5564"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelCervicalSpine"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcImgUpperArtMRI"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagCertInfecRickettSpotFeverAustralis"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesMedCaptopril"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisMuskSkelDeformScoliosisLumbar"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCare"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcExtraPhysioloExtracorHyperthermia"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcAdminPhysioIrriEyePercutaneous"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicY"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectroSodiumBloodArt"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioMeds"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelCervicalSpineTechnetium99"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperDigestiveSystem"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMeasurePhysioloMonitorProductsExtRate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemVitalDeadDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagCertPerinatHemorNewBrnIntraCraniGrd1NBorn"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisNervMyoneuralMyopathInflamatoryOtherInflmatoryElseClassifiedDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhite"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteDate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytes"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicDate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelSkulNCervical"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthma"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCareAge3444"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemVitalDead"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlant"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_VisitTypeAmbulatory"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMentalNonePsychoPersonBehavioral"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisNervMyoneuralMyopathInflamatoryOtherInflmatoryElseClassified"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcPlacemntAnatomiRemovalFootExtrCast"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantANDAsthma"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_PhyRehabActivitCirculatoryLowerExtrCirculation"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcRadiEarNoseStereoSalivRadioSurgery"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_PhyRehabActivitCirculatoryLowerExtrAerobicConditioning"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcPhysicalRehabAudiology"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcRadiEarNoseStereoSalivRadioSurgery">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcRadiEarNoseStereoSalivRadioSurgery -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_VisitTypeEmergency">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_VisitTypeEmergency -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcPhysicalRehabAudiology">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcPhysicalRehabAudiology -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectroSodiumBloodArt">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_LabElectroSodiumBloodArt -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMeasurePhysioloMonitorProducts">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMeasurePhysioloMonitorProducts -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcExtracorporealPerform">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcExtracorporealPerform -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthma">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthma -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesAgeArtiFibril">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testCompare"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesAgeArtiFibril -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelCervicalSpine">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelCervicalSpine -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCare">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCare -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ImgUpperArtMRI_VertArtBilateral">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ImgUpperArtMRI_VertArtBilateral -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelCervicalSpineTechnetium99">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelCervicalSpineTechnetium99 -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemVitalDeadDateRange">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_DemVitalDeadDateRange -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantANDAsthma">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantANDAsthma -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisNervMyoneuralMyopathInflamatoryOtherInflmatoryElseClassifiedDateRange">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisNervMyoneuralMyopathInflamatoryOtherInflmatoryElseClassifiedDateRange -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_OtherProcPhysioOtherProcUpperExternalRobotic">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_OtherProcPhysioOtherProcUpperExternalRobotic -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesMedCaptopril">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCompare"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesMedCaptopril -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioMeds">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioMeds -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisNervMyoneuralMyopathInflamatoryOtherInflmatoryElseClassified">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisNervMyoneuralMyopathInflamatoryOtherInflmatoryElseClassified -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaAge5564">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCompare"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaAge5564 -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperDigestiveSystem">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperDigestiveSystem -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisMuskSkelDeformScoliosisLumbar">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisMuskSkelDeformScoliosisLumbar -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMedSurUpprtJntReplaceSternoOpenSynthetic">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="DBduration"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMedSurUpprtJntReplaceSternoOpenSynthetic -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteDate">
+        <methods>
+          <include name="testCompare"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteDate -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelSkulNCervical">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedMuscSkelSkulNCervical -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytes">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytes -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioAceInhibit">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testCompare"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioAceInhibit -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagSymptomsR00_99R1019AbdomPelvicOtherReboundLeftUpTender">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagSymptomsR00_99R1019AbdomPelvicOtherReboundLeftUpTender -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisResp">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisResp -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespDateRange">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="DBduration"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespDateRange -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_VisitTypeAmbulatory">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="DBduration"/>
+          <include name="testCompare"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_VisitTypeAmbulatory -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcPlacemntAnatomiRemovalFootExtrCast">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcPlacemntAnatomiRemovalFootExtrCast -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicDate">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicDate -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcAdminPhysioIrriEyePercutIrrigSubstance">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcAdminPhysioIrriEyePercutIrrigSubstance -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_PhyRehabActivitCirculatoryLowerExtrCirculation">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_PhyRehabActivitCirculatoryLowerExtrCirculation -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMeasurePhysioloMonitorProductsExtRate">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMeasurePhysioloMonitorProductsExtRate -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCareAge3444">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testCompare"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCareAge3444 -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceBlkOrAfAm">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceBlkOrAfAm -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagCertInfecRickettSpotFeverAustralis">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagCertInfecRickettSpotFeverAustralis -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilOralTab">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilOralTab -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcExtraPhysioloExtracorHyperthermia">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcExtraPhysioloExtracorHyperthermia -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcObstetrPregExtracProductViaArtNatuNoDevice">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcObstetrPregExtracProductViaArtNatuNoDevice -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMedSurUpprtJntReplaceSternoOpen">
+        <methods>
+          <include name="setUp"/>
+          <include name="DBduration"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMedSurUpprtJntReplaceSternoOpen -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedCentralNerv">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcNucMedCentralNerv -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemVitalDead">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_DemVitalDead -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMentalNonePsychoPersonBehavioral">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcMentalNonePsychoPersonBehavioral -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcImgUpperArtMRI">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcImgUpperArtMRI -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptopril">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptopril -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisEarOttisAcuteOttisREar">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisEarOttisAcuteOttisREar -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicY">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicY -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteAgeHispanic">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testCompare"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteAgeHispanic -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagCertPerinatHemorNewBrnIntraCraniGrd1NBorn">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagCertPerinatHemorNewBrnIntraCraniGrd1NBorn -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhite">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhite -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlant">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlant -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_PhyRehabActivitCirculatoryLowerExtrAerobicConditioning">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10_PhyRehabActivitCirculatoryLowerExtrAerobicConditioning -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantDate">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantDate -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcAdminPhysioIrriEyePercutaneous">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcAdminPhysioIrriEyePercutaneous -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

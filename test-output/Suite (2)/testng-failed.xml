@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (2)]" allow-return-values="true">
+  <test name="TestLab">
+    <groups>
+      <define name="all">
+        <include name="DB_duration"/>
+        <include name="UI_DB_Comparison"/>
+      </define> <!-- all -->
+      <define name="DBQuery">
+        <include name="DB_query"/>
+      </define> <!-- DBQuery -->
+      <define name="Duration">
+        <include name="DB_duration"/>
+      </define> <!-- Duration -->
+      <define name="UIQuery">
+        <include name="UI_query"/>
+      </define> <!-- UIQuery -->
+      <run>
+        <include name="Duration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabHemHemoA1c"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabHemBasoLukocytes100"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectrolytes"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum140"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectrolytesDateRange"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerumDateRange"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum140DateRange"/>
+    </classes>
+  </test> <!-- TestLab -->
+  <test name="TestLab(failed)">
+    <groups>
+      <run>
+        <include name="Duration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabHemHemoA1c">
+        <methods>
+          <include name="DBduration"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_LabHemHemoA1c -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum140">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="DBduration"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum140 -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabHemBasoLukocytes100">
+        <methods>
+          <include name="tearDown"/>
+          <include name="DBduration"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_LabHemBasoLukocytes100 -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum140DateRange">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerum140DateRange -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectrolytes">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_LabElectrolytes -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectrolytesDateRange">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_LabElectrolytesDateRange -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerumDateRange">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_LabElectroSodioSerumDateRange -->
+    </classes>
+  </test> <!-- TestLab(failed) -->
+</suite> <!-- Failed suite [Suite (2)] -->

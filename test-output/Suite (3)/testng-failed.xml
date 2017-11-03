@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (3)]" allow-return-values="true">
+  <test name="TestOper">
+    <groups>
+      <define name="all">
+        <include name="DB_duration"/>
+        <include name="UI_DB_Comparison"/>
+      </define> <!-- all -->
+      <define name="DBQuery">
+        <include name="DB_query"/>
+      </define> <!-- DBQuery -->
+      <define name="Duration">
+        <include name="DB_duration"/>
+      </define> <!-- Duration -->
+      <define name="UIQuery">
+        <include name="UI_query"/>
+      </define> <!-- UIQuery -->
+      <run>
+        <include name="Duration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.dbmi.i2b2Act.Qry_Act_OperDigestiveSystem"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_OperDigestiveSystemDate"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_OperLiverTransPlant"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_OperLiverTransPlantDate"/>
+    </classes>
+  </test> <!-- TestOper -->
+</suite> <!-- Failed suite [Suite (3)] -->

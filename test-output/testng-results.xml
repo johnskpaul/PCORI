@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(9) Chiropract~k4er\(9W) Chiroprac~xixo\(9WB) Chiropra~r3y4\(9WB1) Chiropr~rc8t\(9WB1X) Chirop~6605\(9WB1XK) Chiro~pzat\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t]]>
+    </line>
+    <line>
+      <![CDATA[Query Duration: 1128 ms]]>
+    </line>
+    <line>
+      <![CDATA[*******************************************Query: ICD10 Procedures \ Chiropractic (procedure) \ anatomical regions (procedure) \ manipulation \ cervical \ external \ mechanically assisted \*******************************************]]>
+    </line>
+    <line>
+      <![CDATA[UI Query Resulst:Query Name: mechanically as@08:55:00
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Chiropractic (procedure) \ anatomical regions (procedure) \ manipulation \ cervical \ external \ mechanically assisted mechanically assisted  
+Finished Query: "mechanically as@08:55:00"
+[4.1 secs]
+Compute Time: 3 secs
+Number of patients for "mechanically as@08:55:00"
+patient_count: 0]]>
+    </line>
+    <line>
+      <![CDATA[connected to database]]>
+    </line>
+    <line>
+      <![CDATA[DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(9) Chiropract~k4er\(9W) Chiroprac~xixo\(9WB) Chiropra~r3y4\(9WB1) Chiropr~rc8t\(9WB1X) Chirop~6605\(9WB1XK) Chiro~pzat\%') ]]>
+    </line>
+    <line>
+      <![CDATA[0]]>
+    </line>
+    <line>
+      <![CDATA[Comparison Result: Numbers Matched!!!]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="217325" started-at="2017-11-02T12:54:25Z" finished-at="2017-11-02T12:58:03Z">
+    <groups>
+      <group name="UI_DB_Comparison">
+        <method signature="Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst.testCompare()[pri:0, instance:com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst@ae45eb6]" name="testCompare" class="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst"/>
+      </group> <!-- UI_DB_Comparison -->
+      <group name="DB_duration">
+        <method signature="Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst.DBduration()[pri:0, instance:com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst@ae45eb6]" name="DBduration" class="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst"/>
+      </group> <!-- DB_duration -->
+    </groups>
+    <test name="Default test" duration-ms="217325" started-at="2017-11-02T12:54:25Z" finished-at="2017-11-02T12:58:03Z">
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst@ae45eb6]" name="setUp" is-config="true" duration-ms="10267" started-at="2017-11-02T08:54:25Z" finished-at="2017-11-02T08:54:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="DBduration()[pri:0, instance:com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst@ae45eb6]" name="DBduration" duration-ms="5356" started-at="2017-11-02T08:54:36Z" finished-at="2017-11-02T08:54:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(9) Chiropract~k4er\(9W) Chiroprac~xixo\(9WB) Chiropra~r3y4\(9WB1) Chiropr~rc8t\(9WB1X) Chirop~6605\(9WB1XK) Chiro~pzat\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t]]>
+            </line>
+            <line>
+              <![CDATA[Query Duration: 1128 ms]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DBduration -->
+        <test-method status="PASS" signature="testCompare()[pri:0, instance:com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst@ae45eb6]" name="testCompare" duration-ms="200637" started-at="2017-11-02T08:54:41Z" finished-at="2017-11-02T08:58:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[*******************************************Query: ICD10 Procedures \ Chiropractic (procedure) \ anatomical regions (procedure) \ manipulation \ cervical \ external \ mechanically assisted \*******************************************]]>
+            </line>
+            <line>
+              <![CDATA[UI Query Resulst:Query Name: mechanically as@08:55:00
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Chiropractic (procedure) \ anatomical regions (procedure) \ manipulation \ cervical \ external \ mechanically assisted mechanically assisted  
+Finished Query: "mechanically as@08:55:00"
+[4.1 secs]
+Compute Time: 3 secs
+Number of patients for "mechanically as@08:55:00"
+patient_count: 0]]>
+            </line>
+            <line>
+              <![CDATA[connected to database]]>
+            </line>
+            <line>
+              <![CDATA[DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(9) Chiropract~k4er\(9W) Chiroprac~xixo\(9WB) Chiropra~r3y4\(9WB1) Chiropr~rc8t\(9WB1X) Chirop~6605\(9WB1XK) Chiro~pzat\%') ]]>
+            </line>
+            <line>
+              <![CDATA[0]]>
+            </line>
+            <line>
+              <![CDATA[Comparison Result: Numbers Matched!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCompare -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst@ae45eb6]" name="tearDown" is-config="true" duration-ms="1052" started-at="2017-11-02T08:58:02Z" finished-at="2017-11-02T08:58:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

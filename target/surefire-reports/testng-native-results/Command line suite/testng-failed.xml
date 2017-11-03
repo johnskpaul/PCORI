@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.dbmi.i2b2Act.DatabaseTest"/>
+      <class name="com.dbmi.i2b2Act.DBTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.dbmi.i2b2Act.DBTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.DBTest -->
+      <class name="com.dbmi.i2b2Act.DatabaseTest">
+        <methods>
+          <include name="OpenDBConnection"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.DatabaseTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

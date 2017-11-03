@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 02 08:54:25 EDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>217 seconds (217325 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst<br/>
+<a href="#Output-973843173" onClick='toggleBox("Output-973843173", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-973843173" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-973843173">
+Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(9) Chiropract~k4er\(9W) Chiroprac~xixo\(9WB) Chiropra~r3y4\(9WB1) Chiropr~rc8t\(9WB1X) Chirop~6605\(9WB1XK) Chiro~pzat\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t<br/>
+Query Duration: 1128 ms<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst@ae45eb6</td></tr>
+<tr>
+<td title='com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst.testCompare()'><b>testCompare</b><br>Test class: com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst<br/>
+<a href="#Output-1916904573" onClick='toggleBox("Output-1916904573", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1916904573" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1916904573">
+*******************************************Query: ICD10 Procedures \ Chiropractic (procedure) \ anatomical regions (procedure) \ manipulation \ cervical \ external \ mechanically assisted \*******************************************<br/>
+UI Query Resulst:Query Name: mechanically as@08:55:00
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Chiropractic (procedure) \ anatomical regions (procedure) \ manipulation \ cervical \ external \ mechanically assisted mechanically assisted  
+Finished Query: "mechanically as@08:55:00"
+[4.1 secs]
+Compute Time: 3 secs
+Number of patients for "mechanically as@08:55:00"
+patient_count: 0<br/>
+connected to database<br/>
+DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(9) Chiropract~k4er\(9W) Chiroprac~xixo\(9WB) Chiropra~r3y4\(9WB1) Chiropr~rc8t\(9WB1X) Chirop~6605\(9WB1XK) Chiro~pzat\%') <br/>
+0<br/>
+Comparison Result: Numbers Matched!!!<br/>
+</div>
+</td>
+<td></td>
+<td>200</td>
+<td>com.dbmi.i2b2Pcori.Qry_Pcori_ICD10ProcChiroAnatoManipCerviExtrnalMechAsst@ae45eb6</td></tr>
+</table><p>
+</body>
+</html>

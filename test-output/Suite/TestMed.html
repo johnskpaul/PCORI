@@ -1,0 +1,262 @@
+<html>
+<head>
+<title>TestNG:  TestMed</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestMed</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 21 08:00:22 EDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>92 seconds (92496 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Duration DB_duration </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_MedFamciclovir.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_MedFamciclovir</td>
+<td><div><pre>java.sql.SQLException: SQL statement to execute cannot be empty or null
+	at oracle.jdbc.driver.OracleSql.initialize(OracleSql.java:104)
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1299)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:422)
+	at com.dbmi.i2b2Act.LoginI2b2Act.testDB_duration(LoginI2b2Act.java:215)
+	at com.dbmi.i2b2Act.Qry_Act_MedFamciclovir.DBduration(Qry_Act_MedFamciclovir.java:139)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1733022752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1733022752'><pre>java.sql.SQLException: SQL statement to execute cannot be empty or null
+	at oracle.jdbc.driver.OracleSql.initialize(OracleSql.java:104)
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1299)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:422)
+	at com.dbmi.i2b2Act.LoginI2b2Act.testDB_duration(LoginI2b2Act.java:215)
+	at com.dbmi.i2b2Act.Qry_Act_MedFamciclovir.DBduration(Qry_Act_MedFamciclovir.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.dbmi.i2b2Act.Qry_Act_MedFamciclovir@1794d431</td></tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_MedCentalAnitdepressSetraline.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_MedCentalAnitdepressSetraline</td>
+<td><div><pre>java.sql.SQLException: SQL statement to execute cannot be empty or null
+	at oracle.jdbc.driver.OracleSql.initialize(OracleSql.java:104)
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1299)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:422)
+	at com.dbmi.i2b2Act.LoginI2b2Act.testDB_duration(LoginI2b2Act.java:215)
+	at com.dbmi.i2b2Act.Qry_Act_MedCentalAnitdepressSetraline.DBduration(Qry_Act_MedCentalAnitdepressSetraline.java:144)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace873309260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace873309260'><pre>java.sql.SQLException: SQL statement to execute cannot be empty or null
+	at oracle.jdbc.driver.OracleSql.initialize(OracleSql.java:104)
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1299)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:422)
+	at com.dbmi.i2b2Act.LoginI2b2Act.testDB_duration(LoginI2b2Act.java:215)
+	at com.dbmi.i2b2Act.Qry_Act_MedCentalAnitdepressSetraline.DBduration(Qry_Act_MedCentalAnitdepressSetraline.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.dbmi.i2b2Act.Qry_Act_MedCentalAnitdepressSetraline@5442a311</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_MedCardioMedsDate.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_MedCardioMedsDate<br/>
+<a href="#Output-1174248013" onClick='toggleBox("Output-1174248013", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1174248013" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1174248013">
+Query:insert into ncats2i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from ncats2i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  ncats2i2b2demodata.concept_dimension   where concept_path LIKE '\ACT\Medications\N0000010574\N0000029116\%') AND  ( f.start_date >= to_date('01-Jan-2015 00:00:00','DD-MON-YYYY HH24:MI:SS') AND f.start_date <= to_date('01-Jan-2017 00:00:00','DD-MON-YYYY HH24:MI:SS') ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t<br/>
+Query Duration: 2233 ms<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.dbmi.i2b2Act.Qry_Act_MedCardioMedsDate@39c0f4a</td></tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_MedCardioAceInhibit.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_MedCardioAceInhibit<br/>
+<a href="#Output-922807452" onClick='toggleBox("Output-922807452", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-922807452" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-922807452">
+Query:insert into ncats2i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from ncats2i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  ncats2i2b2demodata.concept_dimension   where concept_path LIKE '\ACT\Medications\N0000010574\N0000029116\N0000029130\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t<br/>
+Query Duration: 1016 ms<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.dbmi.i2b2Act.Qry_Act_MedCardioAceInhibit@548e7350</td></tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_MedCardioCaptopril.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_MedCardioCaptopril<br/>
+<a href="#Output-1713568869" onClick='toggleBox("Output-1713568869", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1713568869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1713568869">
+Query:insert into ncats2i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from ncats2i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  ncats2i2b2demodata.concept_dimension   where concept_path LIKE '\ACT\Medications\N0000010574\N0000029116\N0000029130\1998\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t<br/>
+Query Duration: 78 ms<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.dbmi.i2b2Act.Qry_Act_MedCardioCaptopril@1a968a59</td></tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_MedCardioAceInhibitDate.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_MedCardioAceInhibitDate<br/>
+<a href="#Output-487792155" onClick='toggleBox("Output-487792155", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-487792155" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-487792155">
+Query:insert into ncats2i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from ncats2i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  ncats2i2b2demodata.concept_dimension   where concept_path LIKE '\ACT\Medications\N0000010574\N0000029116\N0000029130\%') AND  ( f.start_date >= to_date('01-Jan-2015 00:00:00','DD-MON-YYYY HH24:MI:SS') AND f.start_date <= to_date('01-Jan-2017 00:00:00','DD-MON-YYYY HH24:MI:SS') ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t<br/>
+Query Duration: 406 ms<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.dbmi.i2b2Act.Qry_Act_MedCardioAceInhibitDate@42e26948</td></tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_MedCardioCaptoprilOralTab.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_MedCardioCaptoprilOralTab<br/>
+<a href="#Output-855700733" onClick='toggleBox("Output-855700733", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-855700733" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-855700733">
+Query:insert into ncats2i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from ncats2i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  ncats2i2b2demodata.concept_dimension   where concept_path LIKE '\ACT\Medications\N0000010574\N0000029116\N0000029130\1998\371254\308964\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t<br/>
+Query Duration: 0 ms<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.dbmi.i2b2Act.Qry_Act_MedCardioCaptoprilOralTab@57baeedf</td></tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_MedCardioCaptoprilOralTabDate.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_MedCardioCaptoprilOralTabDate<br/>
+<a href="#Output-1446001495" onClick='toggleBox("Output-1446001495", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1446001495" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1446001495">
+Query:insert into ncats2i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from ncats2i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  ncats2i2b2demodata.concept_dimension   where concept_path LIKE '\ACT\Medications\N0000010574\N0000029116\N0000029130\1998\371254\308964\%') AND  ( f.start_date >= to_date('01-Jan-2015 00:00:00','DD-MON-YYYY HH24:MI:SS') AND f.start_date <= to_date('01-Jan-2017 00:00:00','DD-MON-YYYY HH24:MI:SS') ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t<br/>
+Query Duration: 0 ms<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.dbmi.i2b2Act.Qry_Act_MedCardioCaptoprilOralTabDate@343f4d3d</td></tr>
+<tr>
+<td title='com.dbmi.i2b2Act.Qry_Act_MedCardioMeds.DBduration()'><b>DBduration</b><br>Test class: com.dbmi.i2b2Act.Qry_Act_MedCardioMeds<br/>
+<a href="#Output-1141113940" onClick='toggleBox("Output-1141113940", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1141113940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1141113940">
+Query:insert into ncats2i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from ncats2i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  ncats2i2b2demodata.concept_dimension   where concept_path LIKE '\ACT\Medications\N0000010574\N0000029116\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t<br/>
+Query Duration: 2860 ms<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.dbmi.i2b2Act.Qry_Act_MedCardioMeds@53b32d7</td></tr>
+</table><p>
+</body>
+</html>

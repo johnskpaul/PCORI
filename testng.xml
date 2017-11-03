@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" allow-return-values="true">
+	<test name="TestDuration" preserve-order="true" parallel="false">
+		<groups>
+			<define name="all">
+				<include name="DB_duration"></include>
+				<include name="UI_DB_Comparison"></include>
+			</define>
+			<define name="Duration">
+				<include name="DB_duration"></include>
+			</define>
+			<define name="DBQuery">
+				<include name="DB_query"></include>
+			</define>
+			<define name="UIQuery">
+				<include name="UI_query"></include>
+			</define>
+			<run>
+				<include name="all"></include>
+			</run>
+		</groups>
+    <classes>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCare"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilOralTab"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioAceInhibit"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicY"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectroSodiumBloodArt"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioMeds"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperDigestiveSystem"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioMedsDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperDigestiveSystemDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantDate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhite"/>
+      <!-- <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteAgeHispanic"/> -->
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptoprilOralTabDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemRaceWhiteDate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytes"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioAceInhibitDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_DemHispanicDate"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthma"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHmSelfCareAge3445DateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesAgeArtiFibril"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_EncounterDischarHomeSelfCareAge3444"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlant"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisResp"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectroSodiumBloodArtDateRange"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_MedCardioCaptopril"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD9OperLiverTransPlantANDAsthma"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_ICD10DiagDisRespAsthmaAge5564"/>
+      <class name="com.dbmi.i2b2Pcori.Qry_Pcori_LabElectrolytesMedCaptopril"/>
+    </classes>
+  </test> <!-- TestDBDuration -->
+</suite> <!-- Suite -->

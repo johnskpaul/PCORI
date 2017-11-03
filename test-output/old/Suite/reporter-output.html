@@ -1,0 +1,1038 @@
+<h2>Reporter output</h2><table><tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\PATH\Medications\N0000010574\N0000029116\N0000029130\1998\371254\308964\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 13976 ms</td></tr>
+<tr><td>UI Query Resulst:Query Name: Captopril 50 MG@08:39:59
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\PATH\Medications\Drug Products by VA Class\Cardiovascular medications\Ace inhibitors\Captopril Captopril 50 MG Oral Tablet  
+Finished Query: "Captopril 50 MG@08:39:59"
+[3.4 secs]
+Compute Time: 3 secs
+Number of patients for "Captopril 50 MG@08:39:59"
+patient_count: 581</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PATH\Medications\N0000010574\N0000029116\N0000029130\1998\371254\308964\%')</td></tr>
+<tr><td>581</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\PATH\Medications\N0000010574\N0000029116\N0000029130\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 51208 ms</td></tr>
+<tr><td>UI Query Resulst:Query Name: Ace inhibitors@08:41:15
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\PATH\Medications\Drug Products by VA Class\Cardiovascular medications\Ace inhibitors Ace inhibitors  
+Running Query: "Ace inhibitors@08:41:15"
+[10.1 secs]</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PATH\Medications\N0000010574\N0000029116\N0000029130\%')</td></tr>
+<tr><td>263309</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(1) Obstetrics~hmzq\(10) Obstetric~or57\(10D) Obstetri~fu65\(10D1) Obstetr~85ex\(10D18) Obstet~wo9m\(10D18Z) Obste~ehrn\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 311 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures \ Obstetrics (procedure) \ pregnancy (procedure) \ extraction \ products of conception, retained \ via natural or artificial opening endoscopic \ no device *******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: no device@08:42:15
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Obstetrics (procedure) \ pregnancy (procedure) \ extraction \ products of conception, retained \ via natural or artificial opening endoscopic \ no device no device  
+Finished Query: "no device@08:42:15"
+[3.6 secs]
+Compute Time: 3 secs
+Number of patients for "no device@08:42:15"
+patient_count: 1</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(1) Obstetrics~hmzq\(10) Obstetric~or57\(10D) Obstetri~fu65\(10D1) Obstetr~85ex\(10D18) Obstet~wo9m\(10D18Z) Obste~ehrn\%')</td></tr>
+<tr><td>1</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select e.patient_num from dev02i2b2demodata.visit_dimension e where e.encounter_num IN (select encounter_num from  dev02i2b2demodata.visit_dimension   where InOut_cd = 'ED') group by  e.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 170880 ms</td></tr>
+<tr><td>Query: Encounter Details\Visit Type\Emergency Department</td></tr>
+<tr><td>UI Query Resulst:Query Name: Emergency Depar@08:48:19
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\PCORI\ENCOUNTER\VisitType\Emergency Emergency Department  
+Finished Query: "Emergency Depar@08:48:19"
+[120.5 secs]
+Compute Time: 119 secs
+Number of patients for "Emergency Depar@08:48:19"
+patient_count: 1602968</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from visit_dimension where INOUT_CD = 'ED'</td></tr>
+<tr><td>1602968</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.CONCEPT_DIMENSION   where concept_path LIKE '\PATH\PROCEDURE\09\(42-54.99) Ope~bzgq\(50) Operation~5uiv\(50.5) Liver t~mdf7\%') AND  ( f.start_date >= to_date('01-Jan-2015 00:00:00','DD-MON-YYYY HH24:MI:SS') AND f.start_date <= to_date('01-Jan-2017 00:00:00','DD-MON-YYYY HH24:MI:SS') ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 7264 ms</td></tr>
+<tr><td>Procedures/Operations on the digestive system/Operations on liver/Liver transplant Date range: 1/1/2015 – 1/1/2017</td></tr>
+<tr><td>UI Query Resulst:Query Name: Liver transplan@08:52:51
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  01/01/2015   Date To:  1/1/2017   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD9CM \ Procedures \ Operations on the digestive system \ Operations on liver \ Liver transplant Liver transplant  
+Finished Query: "Liver transplan@08:52:51"
+[1.6 secs]
+Compute Time: 0 secs
+Number of patients for "Liver transplan@08:52:51"
+patient_count: 52</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PATH\PROCEDURE\09\(42-54.99) Ope~bzgq\(50) Operation~5uiv\(50.5) Liver t~mdf7\%') AND START_DATE between to_date('01-JAN-15') AND to_date('01-JAN-17')</td></tr>
+<tr><td>52</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(4) Measuremen~ge9w\(4A) Measureme~dxgz\(4A1) Measurem~49bf\(4A1H) Measure~3za2\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 145 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures \ Measurement and monitoring (procedure) \ physiological systems (procedure) \ monitoring \ products of conception, cardiac \  *******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: products of con@08:56:10
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Measurement and monitoring (procedure) \ physiological systems (procedure) \ monitoring \ products of conception, cardiac products of conception, cardiac  
+Finished Query: "products of con@08:56:10"
+[1.5 secs]
+Compute Time: 0 secs
+Number of patients for "products of con@08:56:10"
+patient_count: 350</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(4) Measuremen~ge9w\(4A) Measureme~dxgz\(4A1) Measurem~49bf\(4A1H) Measure~3za2\%')</td></tr>
+<tr><td>350</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count)with t as (select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(H60-H95) Dise~nko6\(H65-H75) Dise~ha92\(H65) Nonsuppu~en9s\(H65.0) Acute~1d9b\(H65.01) Acute~4tkb\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 279 ms</td></tr>
+<tr><td>************************************Query:  ICD10 Diagnoses \ Diseases of the ear and mastoid process (h60-h95) \ Diseases of middle ear and mastoid (h65-h75) \ Nonsuppurative otitis media \ Acute serous otitis media \ Acute serous otitis media, right ear *****************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: Acute serous ot@08:59:47
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Diseases of the ear and mastoid process (h60-h95) \ Diseases of middle ear and mastoid (h65-h75) \ Nonsuppurative otitis media \ Acute serous otitis media \ Acute serous otitis media, right ear Acute serous otitis media, right ear  
+Finished Query: "Acute serous ot@08:59:47"
+[1.7 secs]
+Compute Time: 1 secs
+Number of patients for "Acute serous ot@08:59:47"
+patient_count: 8841</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(H60-H95) Dise~nko6\(H65-H75) Dise~ha92\(H65) Nonsuppu~en9s\(H65.0) Acute~1d9b\(H65.01) Acute~4tkb\%')</td></tr>
+<tr><td>8841</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select p.patient_num from dev02i2b2demodata.patient_dimension p where p.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension   where race_cd = 'DEM|RACE:black') group by  p.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 10881 ms</td></tr>
+<tr><td>UI Query Resulst:Query Name: Black or Africa@09:03:13
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+Black or African American Black or African American  
+Finished Query: "Black or Africa@09:03:13"
+[6.0 secs]
+Compute Time: 4 secs
+Number of patients for "Black or Africa@09:03:13"
+patient_count: 255664</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from PATIENT_DIMENSION where RACE_CD = 'DEM|RACE:black'</td></tr>
+<tr><td>255664</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.CONCEPT_DIMENSION where concept_path like '\PATH\Demographics\HISPANIC\Y\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from tupdate dev02i2b2demodata.QUERY_GLOBAL_TEMP set panel_count =1 where dev02i2b2demodata.QUERY_GLOBAL_TEMP.panel_count =  0 and exists ( select 1 from ( select p.patient_num from dev02i2b2demodata.patient_dimension p where p.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension where race_cd = 'DEM|RACE:white') group by  p.patient_num ) t where dev02i2b2demodata.QUERY_GLOBAL_TEMP.patient_num = t.patient_num)update dev02i2b2demodata.QUERY_GLOBAL_TEMP set panel_count =2 where dev02i2b2demodata.QUERY_GLOBAL_TEMP.panel_count =  1 and exists ( select 1 from ( select p.patient_num from dev02i2b2demodata.patient_dimension p where p.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension where BIRTH_DATE BETWEEN MIN_BIRTHDATE_FOR_AGE(34) AND MAX_BIRTHDATE_FOR_AGE(18)) group by  p.patient_num ) t where dev02i2b2demodata.QUERY_GLOBAL_TEMP.patient_num = t.patient_num)select count(*) from ( select distinct  patient_num  from dev02i2b2demodata.QUERY_GLOBAL_TEMP where panel_count = 2 ) q</td></tr>
+<tr><td>Query Duration: 30593 ms</td></tr>
+<tr><td>Query: Demographics/Race = White and Age = 18-34 and Ethnicity  = Hispanic</td></tr>
+<tr><td>UI Query Resulst:Query Name: White-18-34-Hispa@09:07:20
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+White White  
+Group 2
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+Demographics \ Age \ 18-34 years old 18-34 years old  
+Group 3
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. \ Hisptanic Hispanic  
+Finished Query: "White-18-34-Hispa@09:07:20"
+[28.5 secs]
+Compute Time: 28 secs
+Number of patients for "White-18-34-Hispa@09:07:20"
+patient_count: 2190</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as (select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(R00-R99) Symp~mt2x\(R10-R19) Symp~80oj\(R10) Abdomina~wi0e\(R10.8) Other~rdrx\(R10.82) Rebou~svci\(R10.822) Left~n8lw\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 185 ms</td></tr>
+<tr><td>************************************Query: ICD10 Diagnoses \ Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (r00-r99) \ Symptoms and signs involving the digestive system and abdomen (r10-r19) \ Abdominal and pelvic pain \ Other abdominal pain \ Rebound abdominal tenderness \ Left upper quadrant rebound abdominal tenderness *****************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: Left upper quad@09:09:28
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (r00-r99) \ Symptoms and signs involving the digestive system and abdomen (r10-r19) \ Abdominal and pelvic pain \ Other abdominal pain \ Rebound abdominal tenderness \ Left upper quadrant rebound abdominal tenderness Left upper quadrant rebound abdominal tenderness  
+Finished Query: "Left upper quad@09:09:28"
+[1.3 secs]
+Compute Time: 0 secs
+Number of patients for "Left upper quad@09:09:28"
+patient_count: 12</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(R00-R99) Symp~mt2x\(R10-R19) Symp~80oj\(R10) Abdomina~wi0e\(R10.8) Other~rdrx\(R10.82) Rebou~svci\(R10.822) Left~n8lw\%')</td></tr>
+<tr><td>12</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where  f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(0) Medical an~5b7n\(0R) Medical a~kfod\(0RR) Medical~9tfx\(0RRF) Medical~28qk\(0RRF0) Medica~0lf2\(0RRF0J) Medic~4afj\%' {ESCAPE '?'} ) group by  f.patient_num )select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 294328 ms</td></tr>
+<tr><td>Query: ICD10 Procedures \ Medical and surgical (procedure) \ upper joints (procedure) \ replacement \ sternoclavicular joint, left \ open</td></tr>
+<tr><td>UI Query Resulst:Query Name: synthetic subst@09:18:15
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Medical and surgical (procedure) \ upper joints (procedure) \ replacement \ sternoclavicular joint, left \ open \ synthetic substitute synthetic substitute  
+Running Query: "synthetic subst@09:18:15"
+[180.2 secs]</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(0) Medical an~5b7n\(0R) Medical a~kfod\(0RR) Medical~9tfx\(0RRF) Medical~28qk\(0RRF0) Medica~0lf2\(0RRF0J) Medic~4afj\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(B) Imaging (p~8jdh\(B3) Imaging @~rfcy\(B33) Imaging~uh4z\(B33G) Imaging~borp\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 707 ms</td></tr>
+<tr><td>Query: ICD10 Procedures  \ Imaging (procedure) \ upper arteries (procedure) \ magnetic resonance imaging (mri) \ vertebral arteries, bilateral</td></tr>
+<tr><td>UI Query Resulst:Query Name: vertebral arter@09:21:40
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Imaging (procedure) \ upper arteries (procedure) \ magnetic resonance imaging (mri) \ vertebral arteries, bilateral vertebral arteries, bilateral  
+Finished Query: "vertebral arter@09:21:40"
+[5.2 secs]
+Compute Time: 3 secs
+Number of patients for "vertebral arter@09:21:40"
+patient_count: 4</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(B) Imaging (p~8jdh\(B3) Imaging @~rfcy\(B33) Imaging~uh4z\(B33G) Imaging~borp\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(3) Administra~k1xw\(3E) Administr~kjl9\(3E1) Administ~f0su\(3E1C) Adminis~ckd4\(3E1C3) Admini~8l7d\(3E1C38) Admin~z7af\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 138 ms</td></tr>
+<tr><td>Query: ICD10 Procedures \ Administration (procedure) \ physiological systems and anatomical regions (procedure) \ irrigation \ eye \ percutaneous \ irrigating substance</td></tr>
+<tr><td>UI Query Resulst:Query Name: irrigating subs@09:25:02
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Administration (procedure) \ physiological systems and anatomical regions (procedure) \ irrigation \ eye \ percutaneous \ irrigating substance irrigating substance  
+Finished Query: "irrigating subs@09:25:02"
+[3.6 secs]
+Compute Time: 3 secs
+Number of patients for "irrigating subs@09:25:02"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(3) Administra~k1xw\(3E) Administr~kjl9\(3E1) Administ~f0su\(3E1C) Adminis~ckd4\(3E1C3) Admini~8l7d\(3E1C38) Admin~z7af\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\Path Network\Cohorts\Atrial Fibrillation Cohort\%') group by  f.patient_num )select  t.patient_num, 0 as panel_count  from tupdate dev02i2b2demodata.QUERY_GLOBAL_TEMP set panel_count =1 where dev02i2b2demodata.QUERY_GLOBAL_TEMP.panel_count =  0 and exists ( select 1 from ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num  from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\LABS\LP31388-9\LP19403-2\%')group by  f.patient_num ) t where dev02i2b2demodata.QUERY_GLOBAL_TEMP.patient_num = t.patient_num )update dev02i2b2demodata.QUERY_GLOBAL_TEMP set panel_count =2 where dev02i2b2demodata.QUERY_GLOBAL_TEMP.panel_count =  1 and exists ( select 1 from ( select p.patient_num from dev02i2b2demodata.patient_dimension p where p.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension   where BIRTH_DATE BETWEEN MIN_BIRTHDATE_FOR_AGE(54) AND MAX_BIRTHDATE_FOR_AGE(45)) group by  p.patient_num ) t where dev02i2b2demodata.QUERY_GLOBAL_TEMP.patient_num = t.patient_num )select count(*) from ( select distinct  patient_num  from dev02i2b2demodata.QUERY_GLOBAL_TEMP where panel_count = 2 ) q</td></tr>
+<tr><td>Query Duration: 57043 ms</td></tr>
+<tr><td></td></tr>
+<tr><td>UI Query Resulst:Query Name: Elect-45-54-Atria@09:29:24
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\LABS\LP31388-9\LP19403-2\ Electrolytes - single valence  
+Group 2
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+Demographics \ Age \ 45-54 years old 45-54 years old  
+Group 3
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\Path Network\Cohorts\Atrial Fibrillation Cohort\ Atrial Fibrillation Cohort  
+Finished Query: "Elect-45-54-Atria@09:29:24"
+[45.1 secs]
+Compute Time: 43 secs
+Number of patients for "Elect-45-54-Atria@09:29:24"
+patient_count: 1517</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\LABS\LP31388-9\LP19403-2\%')</td></tr>
+<tr><td>1149956</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as (select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(J00-J99) Dise~45pn\(J40-J47) Chro~fbox\\%' {ESCAPE '?'} )  group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 144 ms</td></tr>
+<tr><td>Query: ICD10 Diagnoses/Diseases of the respiratory system/Chronic lower respiratory disease</td></tr>
+<tr><td>UI Query Resulst:Query Name: Chronic lower r@09:31:37
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Diseases of the respiratory system (j00-j99) \ Chronic lower respiratory diseases (j40-j47) Chronic lower respiratory diseases (j40-j47)  
+Finished Query: "Chronic lower r@09:31:37"
+[7.7 secs]
+Compute Time: 6 secs
+Number of patients for "Chronic lower r@09:31:37"
+patient_count: 288650</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(J00-J99) Dise~45pn\(J40-J47) Chro~fbox\%')</td></tr>
+<tr><td>288650</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num  from dev02i2b2demodata.observation_fact f where  f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(0) Medical an~5b7n\(0R) Medical a~kfod\(0RR) Medical~9tfx\(0RRF) Medical~28qk\(0RRF0) Medica~0lf2\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 309450 ms</td></tr>
+<tr><td>Query: ICD10 Procedures \ Medical and surgical (procedure) \ upper joints (procedure) \ replacement \ sternoclavicular joint, left \ open</td></tr>
+<tr><td>UI Query Resulst:Query Name: open@09:40:32
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Medical and surgical (procedure) \ upper joints (procedure) \ replacement \ sternoclavicular joint, left \ open open  
+Running Query: "open@09:40:32"
+[180.3 secs]</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(0) Medical an~5b7n\(0R) Medical a~kfod\(0RR) Medical~9tfx\(0RRF) Medical~28qk\(0RRF0) Medica~0lf2\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\PATH\Medications\N0000010574\N0000029116\N0000029130\1998\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 58121 ms</td></tr>
+<tr><td>UI Query Resulst:Query Name: Captopril@09:44:50
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\PATH\Medications\Drug Products by VA Class\Cardiovascular medications\Ace inhibitors\Captopril Captopril  
+Finished Query: "Captopril@09:44:50"
+[86.8 secs]
+Compute Time: 84 secs
+Number of patients for "Captopril@09:44:50"
+patient_count: 2758</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PATH\Medications\N0000010574\N0000029116\N0000029130\1998\%')</td></tr>
+<tr><td>2758</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(8) Other proc~wnt7\(8E) Other pro~bvq8\(8E0) Other pr~sp1j\(8E0X) Other p~9ifl\(8E0XX) Other~6pz0\(8E0XXC) Other~yac9\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 127 ms</td></tr>
+<tr><td>Query: ICD10 Procedures  \ ICD10PCS_2015AA \ Physical rehabilitation and diagnostic audiology (procedure) \ rehabilitation (procedure) \ activities of daily living assessment \ circulatory system - lower back / lower extremity \ ventilation, respiration and circulation \ aerobic endurance and conditioning</td></tr>
+<tr><td>UI Query Resulst:Query Name: robotic assiste@09:48:16
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Other procedures (procedure) \ physiological systems and anatomical regions (procedure) \ other procedures \ upper extremity \ external \ robotic assisted procedure robotic assisted procedure  
+Finished Query: "robotic assiste@09:48:16"
+[3.5 secs]
+Compute Time: 3 secs
+Number of patients for "robotic assiste@09:48:16"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(8) Other proc~wnt7\(8E) Other pro~bvq8\(8E0) Other pr~sp1j\(8E0X) Other p~9ifl\(8E0XX) Other~6pz0\(8E0XXC) Other~yac9\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(5) Extracorpo~y4l1\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 231 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures \ Extracorporeal assistance and performance (procedure) \*******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: Extracorporeal @09:51:33
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Extracorporeal assistance and performance (procedure) Extracorporeal assistance and performance (procedure)  
+Finished Query: "Extracorporeal @09:51:33"
+[1.7 secs]
+Compute Time: 1 secs
+Number of patients for "Extracorporeal @09:51:33"
+patient_count: 2423</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(5) Extracorpo~y4l1\%') </td></tr>
+<tr><td>2423</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as (select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where  f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(C) Nuclear me~bmw7\(C0) Nuclear m~nc8j\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 156 ms</td></tr>
+<tr><td>Query: ICD10PCS_2015AA/Nuclear medicine (procedure) / central nervous system (procedure)</td></tr>
+<tr><td>UI Query Resulst:Query Name: central nervous@09:54:51
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Nuclear medicine (procedure) \ central nervous system (procedure) central nervous system (procedure)  
+Finished Query: "central nervous@09:54:51"
+[1.6 secs]
+Compute Time: 1 secs
+Number of patients for "central nervous@09:54:51"
+patient_count: 1</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(C) Nuclear me~bmw7\(C0) Nuclear m~nc8j\%') </td></tr>
+<tr><td>1</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension where concept_path LIKE '\ICD10CM?_2015AA\(J00-J99) Dise~45pn\(J40-J47) Chro~fbox\(J45) Asthma\%' {ESCAPE '?'} ) group by  f.patient_num) select  t.patient_num, 0 as panel_count  from tupdate dev02i2b2demodata.QUERY_GLOBAL_TEMP set panel_count =1 where dev02i2b2demodata.QUERY_GLOBAL_TEMP.panel_count =  0 and exists ( select 1 from ( select p.patient_num from dev02i2b2demodata.patient_dimension p where p.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension where BIRTH_DATE BETWEEN MIN_BIRTHDATE_FOR_AGE(64) AND MAX_BIRTHDATE_FOR_AGE(55)) group by  p.patient_num ) t where dev02i2b2demodata.QUERY_GLOBAL_TEMP.patient_num = t.patient_num )select * from ( select distinct  patient_num  from dev02i2b2demodata.QUERY_GLOBAL_TEMP where panel_count = 1 ) q </td></tr>
+<tr><td>Query Duration: 27137 ms</td></tr>
+<tr><td>Query: ICD10 Diagnoses/Diseases of the respiratory system/Chronic lower respiratory disease /Asthma AND Age = 55-64 years old</td></tr>
+<tr><td>UI Query Resulst:Query Name: Asthma-55-64 y@09:58:36
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Diseases of the respiratory system (j00-j99) \ Chronic lower respiratory diseases (j40-j47) \ Asthma Asthma  
+Group 2
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+Demographics \ Age \ 55-64 years old 55-64 years old  
+Finished Query: "Asthma-55-64 y@09:58:36"
+[30.4 secs]
+Compute Time: 29 secs
+Number of patients for "Asthma-55-64 y@09:58:36"
+patient_count: 23243</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(C) Nuclear me~bmw7\(CP) Nuclear m~uso4\(CP2) Nuclear~vlcm\(CP22) Nuclear~4muk\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 93 ms</td></tr>
+<tr><td>Query: ICD10 Procedures/Nuclear medicine (procedure)/musculoskeletal system (procedure)/cervical spine</td></tr>
+<tr><td>UI Query Resulst:Query Name: cervical spine@10:02:16
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Nuclear medicine (procedure) \ musculoskeletal system (procedure) \ tomographic (tomo) nuclear medicine imaging \ cervical spine cervical spine  
+Finished Query: "cervical spine@10:02:16"
+[1.6 secs]
+Compute Time: 1 secs
+Number of patients for "cervical spine@10:02:16"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(C) Nuclear me~bmw7\(CP) Nuclear m~uso4\(CP2) Nuclear~vlcm\(CP22) Nuclear~4muk\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(B) Imaging (p~8jdh\(B3) Imaging @~rfcy\(B33) Imaging~uh4z\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 346 ms</td></tr>
+<tr><td>Query: ICD10 Procedures  \ Imaging (procedure) \ upper arteries (procedure) \ magnetic resonance imaging (mri)</td></tr>
+<tr><td>UI Query Resulst:Query Name: magnetic resona@10:05:39
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Imaging (procedure) \ upper arteries (procedure) \ magnetic resonance imaging (mri) magnetic resonance imaging (mri)  
+Finished Query: "magnetic resona@10:05:39"
+[3.7 secs]
+Compute Time: 3 secs
+Number of patients for "magnetic resona@10:05:39"
+patient_count: 12</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(B) Imaging (p~8jdh\(B3) Imaging @~rfcy\(B33) Imaging~uh4z\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(A00-B99) Cert~ugmm\ (A75-A79) Rick~1ptq\(A77) Spotted~9llp\ (A77.3) Spotte~sdzw\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 31 ms</td></tr>
+<tr><td>************************************Query: ICD10 Diagnoses  \ Certain infectious and parasitic diseases (a00-b99) \ Rickettsioses (a75-a79) \ Spotted fever [tick-borne rickettsioses] \ Spotted fever due to rickettsia australis *****************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: Spotted fever d@10:09:08
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Certain infectious and parasitic diseases (a00-b99) \ Rickettsioses (a75-a79) \ Spotted fever [tick-borne rickettsioses] \ Spotted fever due to rickettsia australis Spotted fever due to rickettsia australis  
+Finished Query: "Spotted fever d@10:09:08"
+[1.4 secs]
+Compute Time: 0 secs
+Number of patients for "Spotted fever d@10:09:08"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(A00-B99) Cert~ugmm\(A75-A79) Rick~1ptq\(A77) Spotted~9llp\(A77.3) Spotte~sdzw\%')</td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\PATH\Medications\N0000010574\N0000029116\N0000029130\1998\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t update dev02i2b2demodata.QUERY_GLOBAL_TEMP set panel_count =1 where dev02i2b2demodata.QUERY_GLOBAL_TEMP.panel_count =  0 and exists ( select 1 from ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\LABS\LP31388-9\LP19403-2\%') group by  f.patient_num ) t where dev02i2b2demodata.QUERY_GLOBAL_TEMP.patient_num = t.patient_num    )select * from ( select distinct  patient_num  from dev02i2b2demodata.QUERY_GLOBAL_TEMP where panel_count = 1 ) q</td></tr>
+<tr><td>Query Duration: 50821 ms</td></tr>
+<tr><td>UI Query Resulst:Query Name: Electro-Captopr@10:13:49
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\LABS\LP31388-9\LP19403-2\ Electrolytes - single valence  
+Group 2
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\PATH\Medications\Drug Products by VA Class\Cardiovascular medications\Ace inhibitors\Captopril Captopril  
+Finished Query: "Electro-Captopr@10:13:49"
+[50.4 secs]
+Compute Time: 49 secs
+Number of patients for "Electro-Captopr@10:13:49"
+patient_count: 2275</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(M00-M99) Dise~6mvn\(M40-M43) Defo~l404\(M41) Scoliosis\(M41.2) Other~iumu\(M41.26) Other~wjla\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 500 ms</td></tr>
+<tr><td>Query: ICD10CM_2015AA \ Diseases of the musculoskeletal system and connective tissue (m00-m99) \ Deforming dorsopathies (m40-m43) \ Scoliosis \ Other idiopathic scoliosis \ Other idiopathic scoliosis, lumbar region</td></tr>
+<tr><td>UI Query Resulst:Query Name: Other idiopathi@10:16:03
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Diseases of the musculoskeletal system and connective tissue (m00-m99) \ Deforming dorsopathies (m40-m43) \ Scoliosis \ Other idiopathic scoliosis \ Other idiopathic scoliosis, lumbar region Other idiopathic scoliosis, lumbar region  
+Finished Query: "Other idiopathi@10:16:03"
+[1.6 secs]
+Compute Time: 0 secs
+Number of patients for "Other idiopathi@10:16:03"
+patient_count: 953</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(M00-M99) Dise~6mvn\(M40-M43) Defo~l404\(M41) Scoliosis\(M41.2) Other~iumu\(M41.26) Other~wjla\%')</td></tr>
+<tr><td>953</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\PCORI\ENCOUNTER\DISCHARGE?_STATUS\HO\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 12141 ms</td></tr>
+<tr><td>Query:  Encounter Details/Discharge Status = Home/self care</td></tr>
+<tr><td>UI Query Resulst:Query Name: Home / self car@10:19:50
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+Home / self care Home / self care  
+Finished Query: "Home / self car@10:19:50"
+[34.0 secs]
+Compute Time: 33 secs
+Number of patients for "Home / self car@10:19:50"
+patient_count: 1836738</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PCORI\ENCOUNTER\DISCHARGE_STATUS\HO\%')</td></tr>
+<tr><td>1836738</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(6) Extracorpo~lf32\(6A) Extracorp~3tj8\(6A3) Extracor~py8a\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 47 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures  \ Extracorporeal therapies (procedure) \ physiological systems (procedure) \ Extracorporeal therapies, physiological systems, hyperthermia \*******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: hyperthermia@10:23:12
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Extracorporeal therapies (procedure) \ physiological systems (procedure) \ hyperthermia hyperthermia  
+Finished Query: "hyperthermia@10:23:12"
+[1.5 secs]
+Compute Time: 0 secs
+Number of patients for "hyperthermia@10:23:12"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(6) Extracorpo~lf32\(6A) Extracorp~3tj8\(6A3) Extracor~py8a\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(3) Administra~k1xw\(3E) Administr~kjl9\(3E1) Administ~f0su\(3E1C) Adminis~ckd4\(3E1C3) Admini~8l7d\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 109 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures \ Administration (procedure) \ physiological systems and anatomical regions (procedure) \ irrigation \ eye \ percutaneous \*******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: percutaneous@10:26:41
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Administration (procedure) \ physiological systems and anatomical regions (procedure) \ irrigation \ eye \ percutaneous percutaneous  
+Finished Query: "percutaneous@10:26:41"
+[1.5 secs]
+Compute Time: 0 secs
+Number of patients for "percutaneous@10:26:41"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(3) Administra~k1xw\(3E) Administr~kjl9\(3E1) Administ~f0su\(3E1C) Adminis~ckd4\(3E1C3) Admini~8l7d\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(9) Chiropract~k4er\(9W) Chiroprac~xixo\(9WB) Chiropra~r3y4\(9WB1) Chiropr~rc8t\(9WB1X) Chirop~6605\(9WB1XK) Chiro~pzat\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 109 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures \ Chiropractic (procedure) \ anatomical regions (procedure) \ manipulation \ cervical \ external \ mechanically assisted \*******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: mechanically as@10:30:09
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Chiropractic (procedure) \ anatomical regions (procedure) \ manipulation \ cervical \ external \ mechanically assisted mechanically assisted  
+Finished Query: "mechanically as@10:30:09"
+[1.4 secs]
+Compute Time: 1 secs
+Number of patients for "mechanically as@10:30:09"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(9) Chiropract~k4er\(9W) Chiroprac~xixo\(9WB) Chiropra~r3y4\(9WB1) Chiropr~rc8t\(9WB1X) Chirop~6605\(9WB1XK) Chiro~pzat\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as (select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\PATH\Demographics\HISPANIC\Y\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 207 ms</td></tr>
+<tr><td>Query: Demographics/Hispanic = Yes</td></tr>
+<tr><td>UI Query Resulst:Query Name: Hispanic@10:33:25
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. \ Hisptanic Hispanic  
+Finished Query: "Hispanic@10:33:25"
+[1.7 secs]
+Compute Time: 1 secs
+Number of patients for "Hispanic@10:33:25"
+patient_count: 13948</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PATH\Demographics\HISPANIC\Y\%')</td></tr>
+<tr><td>13948</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\LABS\LP31388-9\LP19403-2\LP15099-2\LP50165-7\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 78 ms</td></tr>
+<tr><td>UI Query Resulst:Query Name: Sodium | Blood @10:33:51
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\LABS\LP31388-9\LP19403-2\LP15099-2\LP50165-7\ Sodium | Blood arterial  
+Finished Query: "Sodium | Blood @10:33:51"
+[3.3 secs]
+Compute Time: 2 secs
+Number of patients for "Sodium | Blood @10:33:51"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\LABS\LP31388-9\LP19403-2\LP15099-2\LP50165-7\%')</td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\PATH\Medications\N0000010574\N0000029116\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 65423 ms</td></tr>
+<tr><td>UI Query Resulst:Query Name: Cardiovascular @10:37:00
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\PATH\Medications\Drug Products by VA Class\Cardiovascular medications Cardiovascular medications  
+Finished Query: "Cardiovascular @10:37:00"
+[66.5 secs]
+Compute Time: 66 secs
+Number of patients for "Cardiovascular @10:37:00"
+patient_count: 862930</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PATH\Medications\N0000010574\N0000029116\%')</td></tr>
+<tr><td>862930</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(C) Nuclear me~bmw7\(CP) Nuclear m~uso4\(CP2) Nuclear~vlcm\(CP22) Nuclear~4muk\(CP221) Nuclea~clxy\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 141 ms</td></tr>
+<tr><td>Query: ICD10 Procedures/Nuclear medicine (procedure)/musculoskeletal system (procedure)/cervical spine/ technetium 99m (tc-99m)</td></tr>
+<tr><td>UI Query Resulst:Query Name: technetium 99m @10:41:11
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Nuclear medicine (procedure) \ musculoskeletal system (procedure) \ tomographic (tomo) nuclear medicine imaging \ cervical spine \ technetium 99m (tc-99m) technetium 99m (tc-99m)  
+Finished Query: "technetium 99m @10:41:11"
+[1.5 secs]
+Compute Time: 1 secs
+Number of patients for "technetium 99m @10:41:11"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(C) Nuclear me~bmw7\(CP) Nuclear m~uso4\(CP2) Nuclear~vlcm\(CP22) Nuclear~4muk\(CP221) Nuclea~clxy\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.CONCEPT_DIMENSION   where concept_path LIKE '\PATH\PROCEDURE\09\(42-54.99) Ope~bzgq\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 890 ms</td></tr>
+<tr><td>Query: ICD9  Procedures/Operations on the digestive system</td></tr>
+<tr><td>UI Query Resulst:Query Name: Operations on t@10:44:26
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD9CM \ Procedures \ Operations on the digestive system Operations on the digestive system  
+Finished Query: "Operations on t@10:44:26"
+[3.0 secs]
+Compute Time: 2 secs
+Number of patients for "Operations on t@10:44:26"
+patient_count: 116141</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PATH\PROCEDURE\09\(42-54.99) Ope~bzgq\%')</td></tr>
+<tr><td>116141</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(4) Measuremen~ge9w\(4A) Measureme~dxgz\(4A1) Measurem~49bf\(4A1H) Measure~3za2\(4A1HX) Measur~u533\(4A1HXC) Measu~b03c\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 78 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures \ Measurement and monitoring (procedure) \ physiological systems (procedure) \ monitoring \ products of conception, cardiac \ external \ rate *******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: rate@10:48:11
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Measurement and monitoring (procedure) \ physiological systems (procedure) \ monitoring \ products of conception, cardiac \ external \ rate rate  
+Finished Query: "rate@10:48:11"
+[3.5 secs]
+Compute Time: 3 secs
+Number of patients for "rate@10:48:11"
+patient_count: 292</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(4) Measuremen~ge9w\(4A) Measureme~dxgz\(4A1) Measurem~49bf\(4A1H) Measure~3za2\(4A1HX) Measur~u533\(4A1HXC) Measu~b03c\%')</td></tr>
+<tr><td>292</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select p.patient_num from dev02i2b2demodata.patient_dimension p where p.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension   where vital_status_cd = 'D')   group by  p.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 6660 ms</td></tr>
+<tr><td>Query: Demographics  \ Vital Status \ Dead </td></tr>
+<tr><td>UI Query Resulst:Query Name: Dead@10:51:33
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\PATH\Demographics\Vital Status\Dead\ Dead  
+Finished Query: "Dead@10:51:33"
+[2.8 secs]
+Compute Time: 2 secs
+Number of patients for "Dead@10:51:33"
+patient_count: 71340</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from PATIENT_DIMENSION where PATIENT_NUM IN (select PATIENT_NUM from PATIENT_DIMENSION where VITAL_STATUS_CD = 'D')</td></tr>
+<tr><td>71340</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(P00-P96) Cert~6976\(P50-P61) Hemo~c7pu\(P52) Intracra~0unq\(P52.0) Intrav~shx9\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 375 ms</td></tr>
+<tr><td>************************************Query: ICD10 Diagnoses \ Certain conditions originating in the perinatal period (p00-p96) \ Hemorrhagic and hematological disorders of newborn (p50-p61) \ Intracranial nontraumatic hemorrhage of newborn \ Intraventricular (nontraumatic) hemorrhage, grade 1, of newborn *****************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: Intraventricula@10:55:47
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Certain conditions originating in the perinatal period (p00-p96) \ Hemorrhagic and hematological disorders of newborn (p50-p61) \ Intracranial nontraumatic hemorrhage of newborn \ Intraventricular (nontraumatic) hemorrhage, grade 1, of newborn Intraventricular (nontraumatic) hemorrhage, grade 1, of newborn  
+Finished Query: "Intraventricula@10:55:47"
+[3.4 secs]
+Compute Time: 2 secs
+Number of patients for "Intraventricula@10:55:47"
+patient_count: 145</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(P00-P96) Cert~6976\(P50-P61) Hemo~c7pu\(P52) Intracra~0unq\(P52.0) Intrav~shx9\%')</td></tr>
+<tr><td>145</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as (select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(J00-J99) Dise~45pn\(J40-J47) Chro~fbox\%' {ESCAPE '?'} ) AND  ( f.start_date >= to_date('01-Jan-2015 00:00:00','DD-MON-YYYY HH24:MI:SS') AND f.start_date <= to_date('01-Jan-2017 00:00:00','DD-MON-YYYY HH24:MI:SS') ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 426453 ms</td></tr>
+<tr><td>Query: ICD10 Diagnoses/Diseases of the respiratory system/Chronic lower respiratory disease Date range: 1/1/2015 – 1/1/2017</td></tr>
+<tr><td>UI Query Resulst:Query Name: Chronic lower r@11:06:42
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  01/01/2015   Date To:  1/1/2017   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Diseases of the respiratory system (j00-j99) \ Chronic lower respiratory diseases (j40-j47) Chronic lower respiratory diseases (j40-j47)  
+Finished Query: "Chronic lower r@11:06:42"
+[114.9 secs]
+Compute Time: 114 secs
+Number of patients for "Chronic lower r@11:06:42"
+patient_count: 256754</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(J00-J99) Dise~45pn\(J40-J47) Chro~fbox\%')	AND START_DATE between to_date('01-JAN-15')AND to_date('01-JAN-17')</td></tr>
+<tr><td>256754</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(G00-G99) Dise~j8kq\(G70-G73) Dise~366v\(G72) Other an~fdx8\(G72.4) Inflam~lv2q\(G72.49) Other~w7hl\%' {ESCAPE '?'} )  AND  ( f.start_date >= to_date('01-Jan-2015 00:00:00','DD-MON-YYYY HH24:MI:SS') AND f.start_date <= to_date('01-Jan-2017 00:00:00','DD-MON-YYYY HH24:MI:SS') ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 4131 ms</td></tr>
+<tr><td>************************************Query: ICD10 Diagnoses \ Diseases of the nervous system (g00-g99) \ Diseases of myoneural junction and muscle (g70-g73) \ Other and unspecified myopathies \ Inflammatory and immune myopathies, not elsewhere classified \ Other inflammatory and immune myopathies, not elsewhere classified *****************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: Other inflammat@11:15:27
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  01/01/2015   Date To:  1/1/2017   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Diseases of the nervous system (g00-g99) \ Diseases of myoneural junction and muscle (g70-g73) \ Other and unspecified myopathies \ Inflammatory and immune myopathies, not elsewhere classified \ Other inflammatory and immune myopathies, not elsewhere classified Other inflammatory and immune myopathies, not elsewhere classified  
+Finished Query: "Other inflammat@11:15:27"
+[1.7 secs]
+Compute Time: 0 secs
+Number of patients for "Other inflammat@11:15:27"
+patient_count: 78</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(G00-G99) Dise~j8kq\(G70-G73) Dise~366v\(G72) Other an~fdx8\(G72.4) Inflam~lv2q\(G72.49) Other~w7hl\%')AND START_DATE between to_date('01-JAN-15') AND to_date('01-JAN-17')</td></tr>
+<tr><td>78</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count)with t as (select p.patient_num from dev02i2b2demodata.patient_dimension p where p.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension   where race_cd = 'DEM|RACE:white') group by  p.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 11887 ms</td></tr>
+<tr><td>Query: Demographics/Race = White</td></tr>
+<tr><td>UI Query Resulst:Query Name: White@11:30:31
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+White White  
+Finished Query: "White@11:30:31"
+[38.2 secs]
+Compute Time: 37 secs
+Number of patients for "White@11:30:31"
+patient_count: 2312709</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from PATIENT_DIMENSION where race_cd = 'DEM|RACE:white'</td></tr>
+<tr><td>2312709</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select e.patient_num from dev02i2b2demodata.visit_dimension e where e.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension   where race_cd = 'DEM|RACE:white')  AND  ( e.start_date >= to_date('01-Jan-2015 00:00:00','DD-MON-YYYY HH24:MI:SS') AND e.start_date <= to_date('01-Jan-2017 00:00:00','DD-MON-YYYY HH24:MI:SS') ) group by  e.patient_num )  select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 102195 ms</td></tr>
+<tr><td>Query: Demographics/Race = White Date range: 1/1/2015 – 1/1/2017</td></tr>
+<tr><td>UI Query Resulst:Query Name: White@11:36:44
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  01/01/2015   Date To:  1/1/2017   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+White White  
+Running Query: "White@11:36:44"
+[103.0 secs]</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\LABS\LP31388-9\LP19403-2\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 28615 ms</td></tr>
+<tr><td>Query: Laboratory Tests/Chemistry/Electrolytes</td></tr>
+<tr><td>UI Query Resulst:Query Name: Electrolytes - @11:40:07
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\LABS\LP31388-9\LP19403-2\ Electrolytes - single valence  
+Finished Query: "Electrolytes - @11:40:07"
+[22.7 secs]
+Compute Time: 21 secs
+Number of patients for "Electrolytes - @11:40:07"
+patient_count: 1149956</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\LABS\LP31388-9\LP19403-2\%')</td></tr>
+<tr><td>1149956</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.CONCEPT_DIMENSION   where concept_path like '\PATH\Demographics\HISPANIC\Y\%') AND  ( f.start_date >= to_date('01-Jan-2015 00:00:00','DD-MON-YYYY HH24:MI:SS') AND f.start_date <= to_date('01-Jan-2017 00:00:00','DD-MON-YYYY HH24:MI:SS') ) group by  f.patient_num )select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 21389 ms</td></tr>
+<tr><td>Query: Demographics/Hispanic = Yes Date range: 1/1/2015 – 1/1/2017</td></tr>
+<tr><td>UI Query Resulst:Query Name: Hispanic@11:44:50
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  01/01/2015   Date To:  1/1/2017   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. \ Hisptanic Hispanic  
+Finished Query: "Hispanic@11:44:50"
+[3.9 secs]
+Compute Time: 3 secs
+Number of patients for "Hispanic@11:44:50"
+patient_count: 3545</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PATH\Demographics\HISPANIC\Y\%') AND START_DATE between to_date('01-JAN-15') AND to_date('01-JAN-17')</td></tr>
+<tr><td>3545</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(C) Nuclear me~bmw7\(CP) Nuclear m~uso4\(CP2) Nuclear~vlcm\(CP23) Nuclear~29ts\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 141 ms</td></tr>
+<tr><td>Query: ICD10 Procedures/Nuclear medicine (procedure)/musculoskeletal system (procedure)/cervical spine</td></tr>
+<tr><td>UI Query Resulst:Query Name: skull and cervi@11:45:43
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Nuclear medicine (procedure) \ musculoskeletal system (procedure) \ tomographic (tomo) nuclear medicine imaging \ skull and cervical spine skull and cervical spine  
+Finished Query: "skull and cervi@11:45:43"
+[1.5 secs]
+Compute Time: 0 secs
+Number of patients for "skull and cervi@11:45:43"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(C) Nuclear me~bmw7\(CP) Nuclear m~uso4\(CP2) Nuclear~vlcm\(CP23) Nuclear~29ts\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as (select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(J00-J99) Dise~45pn\(J40-J47) Chro~fbox\(J45) Asthma\%' {ESCAPE '?'} )  group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 788 ms</td></tr>
+<tr><td>Query: ICD10 Diagnoses/Diseases of the respiratory system/Chronic lower respiratory disease /Asthma</td></tr>
+<tr><td>UI Query Resulst:Query Name: Asthma@11:49:42
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Diseases of the respiratory system (j00-j99) \ Chronic lower respiratory diseases (j40-j47) \ Asthma Asthma  
+Finished Query: "Asthma@11:49:42"
+[3.7 secs]
+Compute Time: 2 secs
+Number of patients for "Asthma@11:49:42"
+patient_count: 169587</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(J00-J99) Dise~45pn\(J40-J47) Chro~fbox\(J45) Asthma\%')</td></tr>
+<tr><td>169587</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\PCORI\ENCOUNTER\DISCHARGE?_STATUS\HO\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from tupdate dev02i2b2demodata.QUERY_GLOBAL_TEMP set panel_count =1 where dev02i2b2demodata.QUERY_GLOBAL_TEMP.panel_count =  0 and exists ( select 1 from ( select p.patient_num from dev02i2b2demodata.patient_dimension p where p.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension   where BIRTH_DATE BETWEEN MIN_BIRTHDATE_FOR_AGE(44) AND MAX_BIRTHDATE_FOR_AGE(35)) group by  p.patient_num ) t where dev02i2b2demodata.QUERY_GLOBAL_TEMP.patient_num = t.patient_num ) select count(*) from ( select distinct  patient_num  from dev02i2b2demodata.QUERY_GLOBAL_TEMP where panel_count = 1 ) q</td></tr>
+<tr><td>Query Duration: 37558 ms</td></tr>
+<tr><td>Query:  Encounter Details/Discharge Status = Home/self care AND Age: 35-44</td></tr>
+<tr><td>UI Query Resulst:Query Name: Home / -35-44 y@11:54:31
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+Home / self care Home / self care  
+Group 2
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+Demographics \ Age \ 35-44 years old 35-44 years old  
+Finished Query: "Home / -35-44 y@11:54:31"
+[41.8 secs]
+Compute Time: 41 secs
+Number of patients for "Home / -35-44 y@11:54:31"
+patient_count: 202426</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select p.patient_num from dev02i2b2demodata.patient_dimension p where p.patient_num IN (select patient_num from  dev02i2b2demodata.patient_dimension   where vital_status_cd = 'D')   group by  p.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 710 ms</td></tr>
+<tr><td>Query: Demographics  \ Vital Status \ Dead </td></tr>
+<tr><td>UI Query Resulst:Query Name: Dead@11:57:49
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\PATH\Demographics\Vital Status\Dead\ Dead  
+Finished Query: "Dead@11:57:49"
+[2.8 secs]
+Compute Time: 2 secs
+Number of patients for "Dead@11:57:49"
+patient_count: 71340</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from PATIENT_DIMENSION where PATIENT_NUM IN (select PATIENT_NUM from PATIENT_DIMENSION where VITAL_STATUS_CD = 'D')</td></tr>
+<tr><td>71340</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.CONCEPT_DIMENSION   where concept_path LIKE '\PATH\PROCEDURE\09\(42-54.99) Ope~bzgq\(50) Operation~5uiv\(50.5) Liver t~mdf7\%') group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 234 ms</td></tr>
+<tr><td>Query: Procedures/Operations on the digestive system/Operations on liver/Liver transplant</td></tr>
+<tr><td>UI Query Resulst:Query Name: Liver transplan@12:01:57
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD9CM \ Procedures \ Operations on the digestive system \ Operations on liver \ Liver transplant Liver transplant  
+Finished Query: "Liver transplan@12:01:57"
+[3.8 secs]
+Compute Time: 3 secs
+Number of patients for "Liver transplan@12:01:57"
+patient_count: 468</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PATH\PROCEDURE\09\(42-54.99) Ope~bzgq\(50) Operation~5uiv\(50.5) Liver t~mdf7\%')</td></tr>
+<tr><td>468</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select e.patient_num from dev02i2b2demodata.visit_dimension e where e.encounter_num IN (select encounter_num from  dev02i2b2demodata.visit_dimension   where InOut_cd = 'AV') group by  e.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 267111 ms</td></tr>
+<tr><td>Query: Encounter Details\Visit Type\Ambulatory</td></tr>
+<tr><td>UI Query Resulst:Query Name: Ambulatory Visi@12:10:00
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+\PCORI\ENCOUNTER\VisitType\AmbulatoryVisit\ Ambulatory Visit  
+Running Query: "Ambulatory Visi@12:10:00"
+[200.2 secs]</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from visit_dimension where INOUT_CD = 'AV'</td></tr>
+<tr><td>2670671</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(G) Mental hea~re8e\(GZ) Mental he~08f8\(GZ1) Mental h~byh5\(GZ11) Mental~v0y0\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 574 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures \ Mental health (procedure) \ none (procedure) \ psychological tests \ personality and behavioral \*******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: personality and@12:19:31
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Mental health (procedure) \ none (procedure) \ psychological tests \ personality and behavioral personality and behavioral  
+Finished Query: "personality and@12:19:31"
+[1.7 secs]
+Compute Time: 1 secs
+Number of patients for "personality and@12:19:31"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(G) Mental hea~re8e\(GZ) Mental he~08f8\(GZ1) Mental h~byh5\(GZ11) Mental~v0y0\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(G00-G99) Dise~j8kq\(G70-G73) Dise~366v\(G72) Other an~fdx8\(G72.4) Inflam~lv2q\(G72.49) Other~w7hl\%' {ESCAPE '?'} ) group by  f.patient_num )  select  t.patient_num, 0 as panel_count  from t  </td></tr>
+<tr><td>Query Duration: 2186 ms</td></tr>
+<tr><td>************************************Query: ICD10 Diagnoses \ Diseases of the nervous system (g00-g99) \ Diseases of myoneural junction and muscle (g70-g73) \ Other and unspecified myopathies \ Inflammatory and immune myopathies, not elsewhere classified \ Other inflammatory and immune myopathies, not elsewhere classified *****************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: Other inflammat@12:23:30
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Diseases of the nervous system (g00-g99) \ Diseases of myoneural junction and muscle (g70-g73) \ Other and unspecified myopathies \ Inflammatory and immune myopathies, not elsewhere classified \ Other inflammatory and immune myopathies, not elsewhere classified Other inflammatory and immune myopathies, not elsewhere classified  
+Finished Query: "Other inflammat@12:23:30"
+[5.7 secs]
+Compute Time: 4 secs
+Number of patients for "Other inflammat@12:23:30"
+patient_count: 83</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(G00-G99) Dise~j8kq\(G70-G73) Dise~366v\(G72) Other an~fdx8\(G72.4) Inflam~lv2q\(G72.49) Other~w7hl\%')</td></tr>
+<tr><td>83</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(2) Placement~9mrj\(2W) Placement~wop8\(2W5) Placemen~yht7\(2W5S) Placeme~d9n2\(2W5SX) Placem~xg0j\(2W5SX2) Place~63xo\%' {ESCAPE '?'} )   group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 193 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures \ Placement (procedure) \ anatomical regions (procedure) \ removal \ foot, right \ external \ cast \*******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: cast@12:27:19
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Placement (procedure) \ anatomical regions (procedure) \ removal \ foot, right \ external \ cast cast  
+Finished Query: "cast@12:27:19"
+[3.7 secs]
+Compute Time: 2 secs
+Number of patients for "cast@12:27:19"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(2) Placement~9mrj\(2W) Placement~wop8\(2W5) Placemen~yht7\(2W5S) Placeme~d9n2\(2W5SX) Placem~xg0j\(2W5SX2) Place~63xo\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.CONCEPT_DIMENSION   where concept_path LIKE '\PATH\PROCEDURE\09\(42-54.99) Ope~bzgq\(50) Operation~5uiv\(50.5) Liver t~mdf7\%') group by  f.patient_num )select  t.patient_num, 0 as panel_count  from t update dev02i2b2demodata.QUERY_GLOBAL_TEMP set panel_count =1 where dev02i2b2demodata.QUERY_GLOBAL_TEMP.panel_count =  0 and exists ( select 1 from ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10CM?_2015AA\(J00-J99) Dise~45pn\(J40-J47) Chro~fbox\(J45) Asthma\%' {ESCAPE '?'} ) group by  f.patient_num ) t where dev02i2b2demodata.QUERY_GLOBAL_TEMP.patient_num = t.patient_num    )select count(*) from ( select distinct  patient_num  from dev02i2b2demodata.QUERY_GLOBAL_TEMP where panel_count = 1 ) q</td></tr>
+<tr><td>Query Duration: 3362 ms</td></tr>
+<tr><td>Query: Procedures/Operations on the digestive system/Operations on liver/Liver transplant </td></tr>
+<tr><td>Query 2:  ICD10 Diagnoses/Diseases of the respiratory system/Chronic lower respiratory disease /Asthma </td></tr>
+<tr><td>UI Query Resulst:Query Name: Liver t-Asthma@12:30:42
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD9CM \ Procedures \ Operations on the digestive system \ Operations on liver \ Liver transplant Liver transplant  
+Group 2
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10CM_2015AA \ Diseases of the respiratory system (j00-j99) \ Chronic lower respiratory diseases (j40-j47) \ Asthma Asthma  
+Finished Query: "Liver t-Asthma@12:30:42"
+[1.9 secs]
+Compute Time: 1 secs
+Number of patients for "Liver t-Asthma@12:30:42"
+patient_count: 23</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(*) from (select distinct patient_num from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\PATH\PROCEDURE\09\(42-54.99) Ope~bzgq\(50) Operation~5uiv\(50.5) Liver t~mdf7\%')) t1 join (select distinct patient_num from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10CM_2015AA\(J00-J99) Dise~45pn\(J40-J47) Chro~fbox\(J45) Asthma\%')) t2 on t1.patient_num = t2.patient_num</td></tr>
+<tr><td>23</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(F) Physical r~vf8d\(F0) Physical~kuq4\(F02) Physical~ujz5\(F026) Physica~vb8h\(F026G) Physic~2s1r\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 289 ms</td></tr>
+<tr><td>Query: ICD10 Procedures  \ ICD10PCS_2015AA \ Physical rehabilitation and diagnostic audiology (procedure) \ rehabilitation (procedure) \ activities of daily living assessment \ circulatory system - lower back / lower extremity \ ventilation, respiration and circulation \ aerobic endurance and conditioning</td></tr>
+<tr><td>UI Query Resulst:Query Name: ventilation, re@12:35:38
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Physical rehabilitation and diagnostic audiology (procedure) \ rehabilitation (procedure) \ activities of daily living assessment \ circulatory system - lower back / lower extremity \ ventilation, respiration and circulation ventilation, respiration and circulation  
+Finished Query: "ventilation, re@12:35:38"
+[1.6 secs]
+Compute Time: 1 secs
+Number of patients for "ventilation, re@12:35:38"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(F) Physical r~vf8d\(F0) Physical~kuq4\(F02) Physical~ujz5\(F026) Physica~vb8h\(F026G) Physic~2s1r\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(D) Radiation~tcr1\(D9) Radiation~2erb\(D92) Radiatio~by2j\(D926) Radiati~f1ke\(D926H) Radiat~b2cj\%' {ESCAPE '?'} )  group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 386 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures  \ Radiation therapy (procedure) \ ear, nose, mouth and throat (procedure) \ stereotactic radiosurgery \ salivary glands \ stereotactic particulate radiosurgery \*******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: stereotactic pa@12:39:04
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Radiation therapy (procedure) \ ear, nose, mouth and throat (procedure) \ stereotactic radiosurgery \ salivary glands \ stereotactic particulate radiosurgery stereotactic particulate radiosurgery  
+Finished Query: "stereotactic pa@12:39:04"
+[1.9 secs]
+Compute Time: 1 secs
+Number of patients for "stereotactic pa@12:39:04"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(D) Radiation~tcr1\(D9) Radiation~2erb\(D92) Radiatio~by2j\(D926) Radiati~f1ke\(D926H) Radiat~b2cj\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(F) Physical r~vf8d\(F0) Physical~kuq4\(F02) Physical~ujz5\(F026) Physica~vb8h\(F026G) Physic~2s1r\(F026GG) Physi~ioz9\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t </td></tr>
+<tr><td>Query Duration: 2460 ms</td></tr>
+<tr><td>Query: ICD10 Procedures  \ ICD10PCS_2015AA \ Physical rehabilitation and diagnostic audiology (procedure) \ rehabilitation (procedure) \ activities of daily living assessment \ circulatory system - lower back / lower extremity \ ventilation, respiration and circulation \ aerobic endurance and conditioning</td></tr>
+<tr><td>UI Query Resulst:Query Name: aerobic enduran@12:42:29
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Physical rehabilitation and diagnostic audiology (procedure) \ rehabilitation (procedure) \ activities of daily living assessment \ circulatory system - lower back / lower extremity \ ventilation, respiration and circulation \ aerobic endurance and conditioning aerobic endurance and conditioning  
+Finished Query: "aerobic enduran@12:42:29"
+[1.5 secs]
+Compute Time: 1 secs
+Number of patients for "aerobic enduran@12:42:29"
+patient_count: 0</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS?_2015AA\(F) Physical r~vf8d\(F0) Physical~kuq4\(F02) Physical~ujz5\(F026) Physica~vb8h\(F026G) Physic~2s1r\(F026GG) Physi~ioz9\%') </td></tr>
+<tr><td>0</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+<tr><td>Query:insert into dev02i2b2demodata.QUERY_GLOBAL_TEMP (patient_num, panel_count) with t as ( select  /*+ index(observation_fact fact_cnpt_pat_enct_idx) */ f.patient_num from dev02i2b2demodata.observation_fact f where  f.concept_cd IN (select concept_cd from  dev02i2b2demodata.concept_dimension   where concept_path LIKE '\ICD10PCS?_2015AA\(F) Physical r~vf8d\%' {ESCAPE '?'} ) group by  f.patient_num ) select  t.patient_num, 0 as panel_count  from t</td></tr>
+<tr><td>Query Duration: 282 ms</td></tr>
+<tr><td>*******************************************Query: ICD10 Procedures \ Physical rehabilitation and diagnostic audiology (procedure) \*******************************************</td></tr>
+<tr><td>UI Query Resulst:Query Name: Physical rehabi@12:45:46
+Temporal Constraint: Treat all groups independently
+Group 1
+  Date From:  none   Date To:  none   Excluded?  false   Occurs X times:  > 0   Relevance %:   100   Temporal Constraint:  Treat Independently
+Path Concept/Term Other Information
+ICD10PCS_2015AA \ Physical rehabilitation and diagnostic audiology (procedure) Physical rehabilitation and diagnostic audiology (procedure)  
+Finished Query: "Physical rehabi@12:45:46"
+[1.7 secs]
+Compute Time: 1 secs
+Number of patients for "Physical rehabi@12:45:46"
+patient_count: 32</td></tr>
+<tr><td>connected to database</td></tr>
+<tr><td>DB Query:select count(distinct patient_num) from observation_fact where concept_cd IN (select CONCEPT_CD from concept_dimension where CONCEPT_PATH like '\ICD10PCS_2015AA\(F) Physical r~vf8d\%') </td></tr>
+<tr><td>32</td></tr>
+<tr><td>Comparison Result: Numbers Matched!!!</td></tr>
+</table>

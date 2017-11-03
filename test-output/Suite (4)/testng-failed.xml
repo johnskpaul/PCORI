@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (4)]" allow-return-values="true">
+  <test name="TestVisit">
+    <groups>
+      <define name="all">
+        <include name="DB_duration"/>
+        <include name="UI_DB_Comparison"/>
+      </define> <!-- all -->
+      <define name="DBQuery">
+        <include name="DB_query"/>
+      </define> <!-- DBQuery -->
+      <define name="Duration">
+        <include name="DB_duration"/>
+      </define> <!-- Duration -->
+      <define name="UIQuery">
+        <include name="UI_query"/>
+      </define> <!-- UIQuery -->
+      <run>
+        <include name="Duration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitTypeAmbulatory"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitDetailsLengthOfStay"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitTypeEMR"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitDetailsAge"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitDetailsAge45_54"/>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitTypeAmbulatoryDate"/>
+    </classes>
+  </test> <!-- TestVisit -->
+  <test name="TestVisit(failed)">
+    <groups>
+      <run>
+        <include name="Duration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitDetailsAge45_54">
+        <methods>
+          <include name="tearDown"/>
+          <include name="DBduration"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_VisitDetailsAge45_54 -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitDetailsLengthOfStay">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_VisitDetailsLengthOfStay -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitTypeAmbulatory">
+        <methods>
+          <include name="DBduration"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_VisitTypeAmbulatory -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitTypeEMR">
+        <methods>
+          <include name="DBduration"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_VisitTypeEMR -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitTypeAmbulatoryDate">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_VisitTypeAmbulatoryDate -->
+      <class name="com.dbmi.i2b2Act.Qry_Act_VisitDetailsAge">
+        <methods>
+          <include name="tearDown"/>
+          <include name="DBduration"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dbmi.i2b2Act.Qry_Act_VisitDetailsAge -->
+    </classes>
+  </test> <!-- TestVisit(failed) -->
+</suite> <!-- Failed suite [Suite (4)] -->
