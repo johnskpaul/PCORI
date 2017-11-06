@@ -32,7 +32,7 @@ public class LoginI2b2Pcori {
 			driver = new FirefoxDriver(capabilities);
 		  
 		  //System.setProperty("webdriver.firefox.marionette", "geckodriver.exe");
-	    driver = new FirefoxDriver();
+	    //driver = new FirefoxDriver();
 //	    baseUrl = "https://dbmi-ncats-dev01.dbmi.pitt.edu/";
 	    baseUrl = "http://dbmi-i2b2-dev02.dbmi.pitt.edu/";
 	    
