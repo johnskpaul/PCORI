@@ -29,7 +29,7 @@ public class LoginI2b2Pcori {
 
 	  @BeforeClass(alwaysRun = true)
 	  public void setUp() throws Exception {
-		  System.setProperty("webdriver.firefox.marionette", "geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 			DesiredCapabilities capabilities=DesiredCapabilities.firefox();
 			capabilities.setCapability("marionette", true);
 			driver = new FirefoxDriver(capabilities);
